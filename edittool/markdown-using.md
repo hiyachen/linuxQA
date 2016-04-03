@@ -1,3 +1,4 @@
+在线编辑https://pandao.github.io/editor.md/
 http://www.ituring.com.cn/article/10044
 1:安装
 root@linx:~# apt-get install retext discount python-markdown python-pisa
