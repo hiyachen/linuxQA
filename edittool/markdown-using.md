@@ -48,11 +48,27 @@ clean:
 make html
 
 # pdf输出
+```
 make pdf这里有个问题是如果markdown的内容是中文，那么转换出来的html在浏览器中打开就无法自动识别编码，pdf更惨，直接是一堆乱码。这时我们可以借助markdown对html标记的支持来在markdown文件中加入编码信息。例如我们要将markdown转换为html4文件，可以在文件的开头加上meta标记，指明编码格式：
 
 sed -i '1i\<meta http-equiv="content-type" content="text/html; charset=UTF-8">' *.md这样就可以了。另外，最近使用图灵社区的编辑系统时，markdown会时不时将下划线（_）当作斜体的标记，结果函数名就成了这样的：
 
 # 实际上是ssl_use_cabundle
 sslusecabundle我建议斜体字标记采用单个星号（*），加粗字体采用两个星号（**），这样使用起来就方便多了。当然，这个问题本身在于markdown说用星号或下划线都可以。但实际上，两个都支持反倒会造成一些问题。比如有的地方用下划线（__粗体__ -> 粗体），有的地方用星号（**粗体** -> 粗体），看起来反倒混乱不堪（选星号*的另一个理由是下划线在内容中出现的概率比星号高很多）。
+```
+
+<table border="1">
+<tr>
+<td>row 1, cell 1</td>
+<td>row 1, cell 2</td>
+</tr>
+<tr>
+<td>row 2, cell 1</td>
+<td>row 2, cell 2</td>
+</tr>
+</table>
+
+
+
 
 
